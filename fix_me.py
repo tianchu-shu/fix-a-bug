@@ -6,14 +6,17 @@ class ParentB(object):
     DATA = [4, 5, 6]
 
 
-class Transformer(ParentA, ParentB):
+class Transformer(ParentB, ParentA):
 
     def get_previous(self, current_index):
         '''
         Return the previous value in self.DATA. If there is no previous value,
         return 0.
         '''
+        if current_index == 0:
+            return 0
         return self.DATA[current_index - 1]
+
 
     def transform(self):
         '''
@@ -25,8 +28,9 @@ class Transformer(ParentA, ParentB):
         '''
         transformed_data = []
 
-        for value, index in enumerate(self.DATA):
-            transformed_value = sum(self.get_previous(index), value)
+        for index, value in enumerate(self.DATA):
+            transformed_value = self.get_previous(index)+ value
             transformed_data.append(transformed_value)
 
         return transformed_data
+

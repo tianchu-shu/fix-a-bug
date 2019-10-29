@@ -29,25 +29,25 @@ in the section below.
 
 ### Error 1
 
-**Description:**
+**Description:  enumerate function is wrong. **
 
-**Explanation:**
+**Explanation:  when enumerate(some_list), the order is counter, value. The order for counter and value was wrong in the code, I fixed it by changing the order. **
 
 
 ### Error 2
 
-**Description:**
+**Description: get_previous() function will return the last value in the list when current_index is 0**
 
-**Explanation:**
+**Explanation: I fixed the function by adding an if statement**
 
 ### Error 3
 
-**Description:**
+**Description: sum() is used wrong**
 
-**Explanation:**
+**Explanation: we only need to simply add two numbers instead of using the sum function in the code for this case**
 
 ### Error 4
 
-**Description:**
+**Description: the test-fix-me file is using ParentB as input data while the default input data is ParentA**
 
-**Explanation:**
+**Explanation: I changed the ParentB as the default input for the Transformer class**
