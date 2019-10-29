@@ -29,9 +29,9 @@ in the section below.
 
 ### Error 1
 
-**Description:  enumerate function is wrong. **
+**Description:  enumerate function is wrong.**
 
-**Explanation:  when enumerate(some_list), the order is counter, value. The order for counter and value was wrong in the code, I fixed it by changing the order. **
+**Explanation:  when enumerate(some_list), the order is counter, value. The order for counter and value was wrong in the code, I fixed it by changing the order.**
 
 
 ### Error 2
